@@ -15,7 +15,7 @@ int main() {
     int choice;
 
     do {
-        printf("\nLibrary Management System\n");
+        printf("\nLibrary Management \n");
         printf("1. Add Book\n");
         printf("2. Display Books\n");
         printf("3. Exit\n");
@@ -30,10 +30,10 @@ int main() {
                 displayBooks(library, numBooks);
                 break;
             case 3:
-                printf("Exiting the program. Goodbye!\n");
+                printf("Exiting the program\n");
                 break;
             default:
-                printf("Invalid choice. Please enter a valid option.\n");
+                printf("Invalid choice .\n");
         }
     } while (choice != 3);
 
@@ -48,10 +48,10 @@ int addBook(struct Book library[], int numBooks) {
         printf("Enter author: ");
         scanf(" %[^\n]%*c", library[numBooks].author);
 
-        printf("Book added successfully!\n");
+        printf("Book added successfully\n");
         return numBooks + 1;
     } else {
-        printf("Library is full. Cannot add more books.\n");
+        printf("Library is full\n");
         return numBooks;
     }
 }
