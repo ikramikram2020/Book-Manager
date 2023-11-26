@@ -15,7 +15,7 @@ int main() {
     int choice;
 
     do {
-        printf("\nLibrary Management \n");
+        printf("Library Management \n");
         printf("1. Add Book\n");
         printf("2. Display Books\n");
         printf("3. Exit\n");
